@@ -1,6 +1,6 @@
-// MarkDir-RW project doc.go
+// Markdir project doc.go
 
 /*
-MarkDir-RW document
+Markdir document
 */
 package main
