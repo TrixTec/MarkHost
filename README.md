@@ -3,9 +3,9 @@
 Markdir-v2 is a fork of *thejerf*'s Markdir project, that he has stoped working on...
 [Link to the thejerf's markdir project](https://github.com/thejerf/markdir).
 
-I've decied to work on inproveing the MarkDir project as a web based documentation system, that in the first few version will have no GUI but be interagted with [TieDB](https://tiedb.com/)
+I've decied to work on inproveing the MarkDir project as a web based documentation system, that in the first few version will have no GUI but able to be interagted with [TieDB](https://tiedb.com/)
 
-You have to build the program yourslef for the time being... but I might be able to hcange that on a later date.
+You have to build the program yourslef for the time being... but I might be able to change that on a later date.
 
 <br>
 
