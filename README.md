@@ -1,4 +1,4 @@
-# MarkDir-v2
+# About
 
 Markdir-v2 is a fork of *thejerf*'s Markdir project, that he has stoped working on...
 [Link to the thejerf's markdir project](https://github.com/thejerf/markdir).
