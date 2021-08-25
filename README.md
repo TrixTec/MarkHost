@@ -1,6 +1,6 @@
 # About
 
-Markdir-v2 is a fork of *thejerf*'s Markdir project, that he has stoped working on...
+MarkHost is a fork of *thejerf*'s Markdir project, that he has stoped working on...
 [Link to the thejerf's markdir project](https://github.com/thejerf/markdir).
 
 I've decied to work on inproveing the MarkDir project as a web based documentation system, that in the first few version will have no GUI but able to be interagted with [TieDB](https://tiedb.com/)
