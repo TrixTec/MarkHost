@@ -17,6 +17,6 @@ By default the path that the program looks in is the root directory, so anything
 <br>
 
 # Running it in docker
+I do not have a docker repo yet, but here's the code to run it in docker
 
-I am unforchently not experienced enough to guide you on how to build a docker image of this yet, but i may update this later on.
-
+`docker run -p 19000:19000 -v /**your-path**:/docs markdir:latest /app/Markdir -path /docs -bind 0.0.0.0:19000`
