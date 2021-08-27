@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "embed"
 	"errors"
 	"flag"
 	"fmt"
@@ -29,16 +30,30 @@ func main() {
 	log.Fatal(http.ListenAndServe(*bind, handler))
 }
 
+//go:embed style.css
+var style string
+
 var outputTemplate = template.Must(template.New("base").Parse(`
 <html>
   <head>
-    <title>{{ .Path }}</title>
-  </head>
+    <title>{{ .Path }}</title><style>` + style + `</style></head>
   <body>
+<a style:visited="Blue;" href="/.">Back</a>
+<br>
     {{ .Body }}
-  </body>
-</html>
-`))
+` + footer))
+
+var header string = `
+	<html>
+  <head>
+    <title>Documentation</title><style>` + style + `</style></head>
+  <body>
+	<h1>Documentation System</h1>`
+
+var footer string = `
+	</body>
+	</html>
+	`
 
 type renderer struct {
 	d http.Dir
@@ -58,7 +73,8 @@ func (r renderer) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
 			}
 			//r.h.ServeHTTP(rw, req)
 		}
-		fmt.Fprint(rw, strings.Join(mdLinkList, "\n"))
+		out := header + strings.Join(mdLinkList, "\n") + footer
+		fmt.Fprint(rw, out)
 		return
 	}
 
